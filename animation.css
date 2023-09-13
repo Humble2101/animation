@@ -1,0 +1,111 @@
+*{margin: 0;
+padding: 0;
+}
+.sky{
+    width: 100vw;
+    height: 30vh;
+    background-color: skyblue;
+}
+.cloud1{
+    position: absolute;
+    top: 1em;
+    opacity: 0.5;
+    animation: wind 13s linear infinite alternate-reverse;
+}
+.cloud2{
+    position: absolute;
+    top:-2em;
+     animation:wind1 15s linear infinite alternate-reverse;
+}
+.cloud3{
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    opacity: 0.5;
+    animation: rightwind 13s linear infinite alternate-reverse;
+}
+.cloud4{
+    position: absolute;
+    top:-2em;
+    right: 2em;
+     animation: rightwind1 11s linear infinite alternate-reverse;
+}
+
+.grass{
+width: 100vw;
+    height: 30vh;
+    background-color: green;
+}
+.road{
+  width: 100vw;
+    height: 35vh;
+    background-color: dimgray;  
+    border-top:10px solid gray ;
+    border-bottom:10px solid gray ;
+}
+.lines{
+    border: 5px dashed white;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+.mario{
+    position: absolute;
+    top:84%;
+    right: 2%;
+    animation: motor 4s ease-in-out infinite reverse;
+    
+}
+.luigi{
+    position: absolute;
+    top: 68%;
+    animation: drive 4s ease-in-out infinite reverse;
+}
+@keyframes drive{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(-10vw);
+    }
+}
+@keyframes motor{
+    from{
+        transform: translateX(-78em);
+    }
+    to{
+        transform: translateX(15 mmvw);
+    }
+}
+@keyframes wind{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(30em);
+    }
+}
+@keyframes wind1{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(30em);
+    }
+}
+@keyframes rightwind{
+    from{
+        transform: translateX(-10em);
+    }
+    to{
+        transform: translateX(30em);
+    }
+}
+@keyframes rightwind1{
+    from{
+        transform: translateX(-20em);
+    }
+    to{
+        transform: translateX(30em);
+    }
+}

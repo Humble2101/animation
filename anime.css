@@ -1,0 +1,15 @@
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    transition:1s;
+    rotate: 360deg;
+}
+.circle:hover{
+    background: yellow;
+    transform: rotate(360deg);
+}
